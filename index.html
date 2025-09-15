@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giltech Online Cyber</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="header">
+        <h1>Giltech Online Cyber</h1>
+        <p>Your Trusted Partner for Fast and Reliable Online Services</p>
+        <form class="search-bar" onsubmit="return false;">
+            <input type="text" id="searchInput" placeholder="Search services...">
+            <button type="button" onclick="searchService()">Search</button>
+        </form>
+        <p id="searchResult"></p>
+    </header>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <ul class="nav-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Testimonials</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Main Layout (Grid) -->
+    <main class="main-container">
+        <!-- Content Section -->
+        <section class="content">
+            <h2 id="welcomeText">Welcome to Giltech Online Cyber</h2>
+            <p>We specialize in offering fast, secure, and affordable online services to individuals, businesses, and institutions.</p>
+            <div class="card-container" id="serviceCards">
+                <div class="card">
+                    <h3>Government Services</h3>
+                    <p>We assist with KRA services, eCitizen applications, NSSF, NHIF, and more.</p>
+                </div>
+                <div class="card">
+                    <h3>Document Services</h3>
+                    <p>Printing, scanning, and document processing made quick and easy.</p>
+                </div>
+                <div class="card">
+                    <h3>Online Support</h3>
+                    <p>Reliable guidance for all your online needs, from registrations to applications.</p>
+                </div>
+            </div>
+            <button onclick="addNewService()">+ Add New Service</button>
+        </section>
+
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <h3>Why Choose Us?</h3>
+            <p>• Fast Turnaround<br>• Affordable Pricing<br>• Secure Transactions<br>• Friendly Customer Service</p>
+        </aside>
+    </main>
+
+    <!-- Testimonials -->
+    <section class="testimonials">
+        <h2>What Our Clients Say</h2>
+        <div class="testimonial-cards">
+            <div class="testimonial">
+                <p>"Giltech Online Cyber provided excellent service and support!"</p>
+                <cite>- Priscah O.</cite>
+            </div>
+            <div class="testimonial">
+                <p>"I highly recommend their services for anyone in need of online assistance."</p>
+                <cite>- Celestine G.</cite>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="contact">
+        <h2>Contact Us</h2>
+        <form class="contact-form" onsubmit="return false;">
+            <input type="text" id="userName" placeholder="Your Name" required>
+            <input type="email" id="userEmail" placeholder="Your Email" required>
+            <textarea id="userMessage" placeholder="Your Message" required></textarea>
+            <button type="button" onclick="submitMessage()">Send Message</button>
+        </form>
+        <p id="confirmationMessage"></p>
+    </section>
+
+    <div class="map">
+        <h2>Our Location</h2>
+        <p>We are located in the heart of Nakuru, Kenya.</p>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>Follow us on social media for the latest updates!</p>
+        <div class="social-icons">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-x"></i></a>
+            <a href="#"><i class="fab fa-linkedin"></i></a>
+            <a href="#"><i class="fab fa-whatsapp"></i></a>
+            <a href="#"><i class="fab fa-telegram"></i></a>
+        </div>
+   
+        <p>&copy; 2024 Giltech Online Cyber. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
